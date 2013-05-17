@@ -1,4 +1,15 @@
 Projekt::Application.routes.draw do
+  # get "tags/index"
+
+  # get "tags/show"
+
+  # get "tags/edit"
+
+  # get "tags/create"
+
+  # get "tags/delete"
+  resources :tags
+     match '/tags/nowy' => 'tags#new', :as => :nowy_tag
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,18 @@
+<h1>Dodawanie nowego taga</h1>
+<%= form_for @tag do |f| %>
+  
+   <table>
+  <tr>
+    <th><%= f.label :tg_name, "Nazwa" %></th>
+    <td><%= f.text_field :tg_name %></td>
+   </tr><tr>
+
+    <th><%= f.label :tg_category, "Kategoria" %></th>
+    <td><%= f.text_field :tg_category %></td>
+  </tr>
+ 
+</table>
+     <%= submit_tag("dodaj" , :remote => true) %>
+
+    
+  <% end %>

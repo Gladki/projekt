@@ -1,0 +1,10 @@
+<h1>Dodawanie</h1>
+<%= button_to "nowy tag", nowy_tag_path %>
+
+<% @tags.each do |f|  %>
+<%= f.tg_name %><br/>
+<%= f.tg_category %><br/>
+<%= f.created_at.strftime("%Y-%m-%d") %><br/>
+<%= f.updated_at.strftime("%Y-%m-%d") %><br/>
+<% end %>
+
