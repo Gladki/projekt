@@ -1,4 +1,7 @@
 Projekt::Application.routes.draw do
+  resources :categories
+
+
   # get "tags/index"
 
   # get "tags/show"
