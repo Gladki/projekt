@@ -1,14 +1,14 @@
 <%= form_for @category, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
-    <%= f.label :name, :class => 'control-label' %>
+    <%= f.label 'Nazwa', :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :name, :class => 'text_field' %>
     </div>
   </div>
 
   <div class="form-actions">
-    <%= f.submit nil, :class => 'btn btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+    <%= f.submit 'Stwórz kategorie', :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("anuluj")),
                 categories_path, :class => 'btn' %>
   </div>
 <% end %>
